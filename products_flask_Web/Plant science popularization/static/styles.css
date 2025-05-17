@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.plant-section {
+    background: white;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 800px;
+}
+
+.plant-card {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.plant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.plant-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.plant-info {
+    flex: 1;
+}
+
+.plant-info h3 {
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+}
+
+.search-container {
+    display: flex;
+    margin: 1rem auto;
+    max-width: 500px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-btn {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.category-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.tag {
+    padding: 0.3rem 0.8rem;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tag.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.detail-btn {
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .plant-section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}

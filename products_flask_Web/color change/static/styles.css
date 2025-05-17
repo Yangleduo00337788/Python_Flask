@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.flip-container {
+    perspective: 1000px;
+}
+
+#number-display {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: color 0.5s ease, transform 0.5s ease;
+}
+
+#number-display:hover {
+    transform: rotateY(180deg);
+}
+
+.container {
+    text-align: center;
+}
+
+#number-display {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: color 0.5s ease;
+}
+
+#change-color-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#change-color-btn:hover {
+    background-color: #45a049;
+}
+
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.control-panel button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#gradient-btn {
+    background-color: #2196F3;
+}
+
+#gradient-btn:hover {
+    background-color: #0b7dda;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.slider-container input[type="range"] {
+    flex-grow: 1;
+}
+
+@keyframes colorPulse {
+    0% { color: #FF5722; }
+    25% { color: #4CAF50; }
+    50% { color: #2196F3; }
+    75% { color: #9C27B0; }
+    100% { color: #FF5722; }
+}
+
+.pulse-effect {
+    animation: colorPulse 2s infinite;
+}
